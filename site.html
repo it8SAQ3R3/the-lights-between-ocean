@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Khanna - Digital Guardian</title>
+    <style>
+        /* Basic Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #1f1f1f; /* Dark background */
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #004e92, #000428); /* Blue gradient background */
+            color: #fff;
+            text-align: center;
+            padding: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            z-index: 1;
+        }
+        header p {
+            font-size: 1.5rem;
+            z-index: 1;
+        }
+        
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background-color: #333;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        section h2 {
+            color: #007bff;
+            margin-bottom: 1rem;
+            z-index: 1; /* Ensure heading is above the background image */
+        }
+    .contact-info {
+            text-align: center;
+        }
+        #project ul, #coursework ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+        #skills ul {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            list-style-type: none;
+            padding: 0;
+        }
+        #skills li {
+            margin-bottom: 1rem; /* Increased spacing between skills */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin: 0.5rem 0;
+            }
+            #skills ul {
+                columns: 1;
+                -webkit-columns: 1;
+                -moz-columns: 1;
+            }
+        }
+
+        /* Futuristic glow effect to the links */
+        a {
+            position: relative;
+        }
+        a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #007bff;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+            opacity: 0.8;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Additional Styling for Attractiveness */
+    .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #about {
+            text-align: center;
+        }
+        #about img { /* If you have a profile picture */
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #skills li {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #222;
+            border-radius: 5px;
+        }
+        #project {
+            /* You could add a relevant image here, like a network diagram */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Ensure text is visible on the image */
+        }
+        #project > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Add spacing between <li> elements and content */
+        li {
+            margin-bottom: 0.5rem; /* Adjust spacing as needed */
+        }
+        li::before {
+            content: '';
+            display: block;
+            margin-bottom: 0.5rem; /* Adjust spacing as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Siddharth Khanna</h1>
+        <h3>Cybersecurity Analyst</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#coursework">Coursework</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Skilled cybersecurity enthusiast with a Bachelor of Technology in Information Technology and pursuing a postgraduate diploma in Cybersecurity. Proficient in utilizing Windows Server, Cloud security, Linux, routers, and switches to improve network security. Seeking an opportunity to utilize theoretical knowledge in a practical environment and enhance knowledge as well as skills.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Risk Management</li>
+                <li>Risk Mitigation</li>
+                <li>Vulnerability Analysis</li>
+                <li>Incident Response</li>
+                <li>Cryptography</li>
+                <li>Identity Access Management</li>
+                <li>Routers and Switches</li>
+                <li>Device Security</li>
+                <li>Windows Server</li>
+                <li>Port-Scanning</li>
+                <li>Network Security</li>
+                <li>Cloud Security</li>
+                <li>Python</li>
+                <li>PowerShell</li>
+                <li>BASH</li>
+            </ul>
+        </section>
+
+        <section id="project">
+            <h2>Project: Network Infrastructure for Local Colleges</h2>
+            <p>Objective: To develop and deploy a secure, efficient, and scalable network infrastructure for local colleges, enhancing connectivity, resource sharing, and data protection within the community.</p>
+            <h3>Tasks Completed:</h3>
+            <ul>
+                <li>Network Design and Implementation: Designed and deployed a comprehensive network topology using Microsoft Server 2019 R2 and GNS3, incorporating multiple interconnected servers, routers, and switches for optimized data flow and reliability.</li>
+                <li>Configuration and Management of Network Services: Configured and managed core server roles, including Active Directory, DNS, DHCP, File Server, and Print Server, to deliver essential network services. Optimized protocols (TCP/IP, DNS, DHCP, WINS) for seamless communication and efficient resource allocation.</li>
+                <li>Enhanced Security Measures: Implemented rigorous security protocols, such as firewall rules, user access controls, and data encryption, to protect network infrastructure and ensure the confidentiality and integrity of sensitive data.</li>
+                <li>Network Performance Optimization and Issue Resolution: Conducted proactive monitoring to identify and resolve network issues, optimized performance, and adhered to industry best practices to ensure reliable service delivery.</li>
+                <li>Comprehensive Documentation: Developed detailed documentation covering network architecture, configuration procedures, and troubleshooting guidelines to support future maintenance and scalability.</li>
+            </ul>
+        </section>
+
+        <section id="coursework">
+            <h2>Relevant Coursework</h2>
+            <h3>Python for Cybersecurity</h3>
+            <ul>
+                <li>Wrote scripts in Python to automate security tasks, such as network scanning and data analysis.</li>
+                <li>Developed skills in using libraries like Scapy for packet manipulation and Pandas for data analysis.</li>
+            </ul>
+            <h3>Windows Server Administration</h3>
+            <ul>
+                <li>Gained practical experience with Active Directory, Group Policy, and security configurations, which reinforced the importance of managing user access and permissions to protect organizational assets.</li>
+            </ul>
+            <h3>Linux Security Fundamentals</h3>
+            <ul>
+                <li>Explored the security features and configurations of Linux systems, focusing on robust access control and system protection.</li>
+                <li>Gained firsthand experience with tools like iptables for security management and SELinux for access control, applying security best practices to prepare for real-world cybersecurity challenges.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Siddharth Khanna</p>
+            <p>+1 742-688-0330</p>
+            <p>khannasidd20@gmail.com</p>
+            <p>Brampton, ON</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Siddharth Khanna</p>
+    </footer>
+</body>
+</html>
